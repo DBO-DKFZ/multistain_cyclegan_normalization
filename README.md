@@ -1,7 +1,7 @@
 # Multistain-CycleGAN: Multi-domain stain normalization with a single model
 
 Pytorch implementation of MultiStain-CycleGAN described in "Multi-domain stain normalization for digital pathology: A cycle-consistent adversarial
-network approach for whole slide images". MultiStain-CycleGAN is capable of many-to-one stain translation. 
+network approach for whole slide images". MultiStain-CycleGAN is capable of many-to-one stain translation.
 
 This repo is based on the works of [Jun-Yan Zhu and Taesung Park et al.](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
@@ -9,7 +9,7 @@ This repo is based on the works of [Jun-Yan Zhu and Taesung Park et al.](https:/
 
 * Clone this repo with:  
 
-`git clone https://github.com/marjohe/multistain_cyclegan_normalization.git`
+`git clone https://github.com/marjohe/multistain_cyclegan.git`
 
 * Install the requirements:
     + Pip users: `pip install -r requirements.txt`
