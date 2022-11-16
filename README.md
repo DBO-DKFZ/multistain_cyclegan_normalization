@@ -22,9 +22,9 @@ We ship a working generator trained on the CAMELYON17 dataset as described in th
 * Run `normalize.py` to normalize and plot the example images of every of the 5 centers of the CAMELYON17 dataset.
 
 ### Train your own model
-* Create a root directory containing 2 directories named `trainA` and `trainB`
+* Create a root directory containing 2 directories named `trainA` and `trainB` with images of different medical centers / slides
 * Pass a list of arguments to `train.py` and run it(`--dataroot` and `--name` are required)
-    + `dataroot`: path/to/train_dir
+    + `dataroot`: path/to/train_dir containing `trainA` and `trainB`
     + `name`: experiment name
     
 * For visualization of the train process a visdom server is required:
