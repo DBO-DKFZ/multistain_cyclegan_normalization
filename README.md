@@ -30,6 +30,7 @@ We ship a working generator trained on the CAMELYON17 dataset as described in th
 * For visualization of the train process a visdom server is required:
     + To install visdom: `pip install visdom`
     + To start the server: `python -m visdom.server`
+    + Click [http://localhost:8097](http://localhost:8097) to view the results  
     + Visdom can be disabled by passing `--display_id 0`
 * For troubleshooting look here: [Frequently Asked Questions](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/qa.md)
 
