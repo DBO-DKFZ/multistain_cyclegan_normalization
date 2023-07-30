@@ -1,5 +1,7 @@
 # Multistain-CycleGAN: Multi-domain stain normalization with a single model
 
+![image principle](/docs/assets/principle.png)
+
 Pytorch implementation of MultiStain-CycleGAN described in "Multi-domain stain normalization for digital pathology: A cycle-consistent adversarial
 network approach for whole slide images". MultiStain-CycleGAN is capable of many-to-one stain translation.
 

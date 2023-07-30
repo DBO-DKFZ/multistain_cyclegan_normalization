@@ -14,7 +14,7 @@ class TrainOptions(BaseOptions):
         parser.add_argument('--display_ncols', type=int, default=4, help='if positive, display all images in a single visdom web panel with certain number of images per row.')
         parser.add_argument('--display_id', type=int, default=1, help='window id of the web display, 0 if unwanted')
         parser.add_argument('--display_server', type=str, default="http://localhost", help='visdom server of the web display')
-        parser.add_argument('--display_env', type=str, default='main', help='visdom display environment name (default is "main")')
+        parser.add_argument('--display_env', type=str, default='main', help='visdom display environment.yml name (default is "main")')
         parser.add_argument('--display_port', type=int, default=8097, help='visdom port of the web display')
         parser.add_argument('--update_html_freq', type=int, default=2000, help='frequency of saving training resulcmdts to html')
         parser.add_argument('--print_freq', type=int, default=1000, help='frequency of showing training results on console')

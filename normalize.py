@@ -1,13 +1,35 @@
 import os
+
+import PIL.Image
 import torch
 
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
-
+from torch.utils.data import DataLoader
+from torchvision.datasets import ImageFolder
 from pathlib import Path
 from PIL import Image
 from models.networks import UnetGenerator, get_norm_layer
-from util.util import tensor2im
+from util.util import tensor2im, tensor2im_batch
+import torch
+from torch.utils.data import Dataset
+from PIL import Image
+
+
+class ImageDataset(Dataset):
+    def __init__(self, img_list, transform):
+        self.img_list = img_list
+        self.transform = transform
+
+    def __len__(self):
+        return len(self.img_list)
+
+    def __getitem__(self, idx):
+        img_path = self.img_list[idx]
+        file_name = img_path.name
+        image = Image.open(img_path).convert('RGB')
+        normalized = self.transform(image)
+        return normalized, file_name
 
 
 def main():

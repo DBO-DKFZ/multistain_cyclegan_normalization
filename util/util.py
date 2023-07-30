@@ -7,6 +7,24 @@ import os
 import sys
 import pathlib
 
+def tensor2im_batch(input_batch, imtype=np.uint8):
+    """Converts a batch of Tensor arrays into a list of numpy image arrays.
+
+    Parameters:
+        input_batch (tensor) --  the input batch of image tensor arrays
+        imtype (type)        --  the desired type of the converted numpy arrays
+    """
+    if isinstance(input_batch, torch.Tensor):
+        image_numpy = input_batch.cpu().float().numpy()
+
+        if image_numpy.shape[1] == 1:  # grayscale to RGB
+            image_numpy = np.tile(image_numpy, (1, 3, 1, 1))
+        image_numpy = (np.transpose(image_numpy, (0, 2, 3, 1)) + 1) / 2.0 * 255.0  # post-processing: transpose and scaling
+        image_numpy = image_numpy.astype(imtype)
+        return image_numpy
+    else:
+        return input_batch
+
 def tensor2im(input_image, imtype=np.uint8):
     """"Converts a Tensor array into a numpy image array.
 
