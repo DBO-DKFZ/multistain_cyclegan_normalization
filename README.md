@@ -40,5 +40,13 @@ We ship a working generator trained on the CAMELYON17 dataset as described in th
 We recommend using our publicly available pipeline for tiling whole slide images that can be found here: [WSI Preprocessing](https://github.com/DBO-DKFZ/wsi_preprocessing)
 
 ### Citation
-If you use this work for your research please cite: _Multi-domain stain normalization for digital pathology: A cycle-consistent adversarial
-network approach for whole slide images_
+If you use this work for your research please cite:
+
+ @misc{hetz2023multidomain,
+      title={Multi-domain stain normalization for digital pathology: A cycle-consistent adversarial network for whole slide images}, 
+      author={Martin J. Hetz and Tabea-Clara Bucher and Titus J. Brinker},
+      year={2023},
+      eprint={2301.09431},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+}
