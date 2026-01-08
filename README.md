@@ -19,7 +19,7 @@ This repo is based on the works of [Jun-Yan Zhu and Taesung Park et al.](https:/
   
 ### Minimal working example of the normalization process:
 We ship a working generator trained on the CAMELYON17 dataset as described in the paper. We trained the generator to translate images to the target domain _center_0_ 
-* Download the model weights from [here](https://drive.google.com/file/d/1IAPrELC73Iae13CvTxDRRuxZ-vRWzZZp/view?usp=share_link)
+* Download the model weights from [here](https://hub.dkfz.de/s/otKYg4onkCNapWT)
 * Copy them into `resources/models`  
 * Run `normalize.py` to normalize and plot the example images of every of the 5 centers of the CAMELYON17 dataset.
 
